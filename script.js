@@ -12,9 +12,22 @@ function addBookToLibrary(title,book) {
     index +=1;
 }
 
+const outerDiv = document.querySelector(".bookCards");
+
 function displayAllBooks() {
     for(let i=0;i<myLibrary.length;i++) {
-        console.log(myLibrary[i]);
+        const div = document.createElement("div");
+        div.classList.add("book");
+        const pId = document.createElement("p");
+        const pTitle = document.createElement("p");
+        const pAuthor = document.createElement("p");
+        pId.textContent=myLibrary[i].id
+        pTitle.textContent=myLibrary[i].title
+        pAuthor.textContent = myLibrary[i].author
+        div.appendChild(pId);
+        div.appendChild(pTitle);
+        div.appendChild(pAuthor);
+        outerDiv.appendChild(div);
     }
 }
 
@@ -23,19 +36,6 @@ addBookToLibrary("jannat-ke-pattay","nemrah ahmed");
 
 displayAllBooks();
 
-const card1 = document.querySelector(".book1");
-card1.innerHTML = `
-    <p>id: ${myLibrary[0].id}</p>
-    <p>title: ${myLibrary[0].title}</p>
-    <p>author: ${myLibrary[0].author}</p>
-`;
 
-
-const card2 = document.querySelector(".book2");
-card2.innerHTML = `
-    <p>id: ${myLibrary[1].id}</p>
-    <p>title: ${myLibrary[1].title}</p>
-    <p>author: ${myLibrary[1].author}</p>
-`;
 
 

@@ -4,8 +4,7 @@
     gap:30px;
     
 }
-
-.book1,.book2 {
+.book {
     background-color: pink;
-    height:300px
+    padding-left: 10px;
 }
