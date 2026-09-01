@@ -15,6 +15,7 @@ function addBookToLibrary(title,book) {
 const outerDiv = document.querySelector(".bookCards");
 
 function displayAllBooks() {
+    outerDiv.innerHTML = "";
     for(let i=0;i<myLibrary.length;i++) {
         const div = document.createElement("div");
         div.classList.add("book");
@@ -31,11 +32,32 @@ function displayAllBooks() {
     }
 }
 
+
+function displayForm() {
+    const openFormBtn = document.querySelector("#openFormBtn");
+    const form = document.querySelector("#bookForm");
+    const submitButton = document.querySelector(".submit");
+    const dialog = document.querySelector("#myDialog");
+    form.addEventListener("submit",(event) => {
+
+        const title = document.querySelector("#titleInput").value;
+        const author = document.querySelector("#authorInput").value;
+        addBookToLibrary(title, author);
+        displayAllBooks();
+        form.reset();
+
+    })
+
+    openFormBtn.addEventListener("click",() => {
+        dialog.showModal();
+    })
+
+}
+
 addBookToLibrary("peer-e-kamil","umera ahmed");
 addBookToLibrary("jannat-ke-pattay","nemrah ahmed");
 
 displayAllBooks();
-
-
+displayForm();
 
 

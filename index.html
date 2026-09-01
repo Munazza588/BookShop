@@ -4,10 +4,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <div class="bookCards">
+        <div class="outer-most-div">
+            <div class="outer-div">
+                <div class="bookCards">
             </div>
-            <button class="newBook">New Book</button>
+            <button id="openFormBtn" class="newBook">New Book</button>
+            </div>
+            <dialog class="form-div" id="myDialog">
+                <form id="bookForm" method="dialog">
+                <input type="text" id="titleInput" placeholder="Title" required>
+                <input type="text" id="authorInput" placeholder="Author" required>
+                <button type="submit" class="submit">Submit</button>
+
+                </form>
+            </dialog>
         </div>
         
         <script src="script.js"></script>
