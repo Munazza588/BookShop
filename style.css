@@ -16,3 +16,11 @@
     border-radius: 3px;
     margin-top: 10px;
 }
+
+.DeleteBookButton {
+    background-color: yellow;
+    border:none;
+    padding:10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
