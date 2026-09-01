@@ -8,3 +8,11 @@
     background-color: pink;
     padding-left: 10px;
 }
+
+.newBook {
+    background-color: yellow;
+    border:none;
+    padding:10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
