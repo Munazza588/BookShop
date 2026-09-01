@@ -17,10 +17,11 @@
     margin-top: 10px;
 }
 
-.DeleteBookButton {
+.DeleteBookButton,.FinishedReading {
     background-color: yellow;
     border:none;
     padding:10px;
     border-radius: 3px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
