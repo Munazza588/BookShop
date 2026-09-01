@@ -23,4 +23,19 @@ addBookToLibrary("jannat-ke-pattay","nemrah ahmed");
 
 displayAllBooks();
 
+const card1 = document.querySelector(".book1");
+card1.innerHTML = `
+    <p>id: ${myLibrary[0].id}</p>
+    <p>title: ${myLibrary[0].title}</p>
+    <p>author: ${myLibrary[0].author}</p>
+`;
+
+
+const card2 = document.querySelector(".book2");
+card2.innerHTML = `
+    <p>id: ${myLibrary[1].id}</p>
+    <p>title: ${myLibrary[1].title}</p>
+    <p>author: ${myLibrary[1].author}</p>
+`;
+
 

@@ -1,0 +1,11 @@
+.bookCards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    
+}
+
+.book1,.book2 {
+    background-color: pink;
+    height:300px
+}
